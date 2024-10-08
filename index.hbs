@@ -1,0 +1,15 @@
+{{!< default}}
+
+<div class="gh-outer">
+<main class="site-main gh-inner">
+     <div class="blogTitleSection">
+            <h1 class="blogTitle">Blogs</h1>
+        </div>
+    <div class="post-feed gh-feed">
+        {{#foreach posts}}
+            {{> "loop"}}
+        {{/foreach}}
+    </div>
+    {{pagination}}
+</main>
+</div>
